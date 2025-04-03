@@ -16,76 +16,71 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <nav
-            class="navbar navbar-expand-sm navbar-light bg-light"
-        >
-            <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button
-                    class="navbar-toggler d-lg-none"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavId"
-                    aria-controls="collapsibleNavId"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#" aria-current="page"
-                                >Home
-                                <span class="visually-hidden">(current)</span></a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                id="dropdownId"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                                >Dropdown</a
-                            >
-                            <div
-                                class="dropdown-menu"
-                                aria-labelledby="dropdownId"
-                            >
-                                <a class="dropdown-item" href="#"
-                                    >Action 1</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                    >Action 2</a
-                                >
-                            </div>
-                        </li>
-                    </ul>
-                    <form class="d-flex my-2 my-lg-0">
-                        <input
-                            class="form-control me-sm-2"
-                            type="text"
-                            placeholder="Search"
-                        />
-                        <button
-                            class="btn btn-outline-success my-2 my-sm-0"
-                            type="submit"
-                        >
-                            Search
-                        </button>
-                    </form>
+
+        <div class="container m-5">
+            <h3>Default Container - Claus</h3>
+            <h4>What</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt adipisci, vero architecto delectus, dolore animi ipsa sapiente consequuntur aliquam necessitatibus quaerat? Autem facilis laborum minima consequatur similique itaque eaque corporis.</p>
+        </div>
+
+        <div class="container m-5 shadow bg-light p-5 rounded-5">
+            <h3>Default Container</h3>
+            <h4>What</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt adipisci, vero architecto delectus, dolore animi ipsa sapiente consequuntur aliquam necessitatibus quaerat? Autem facilis laborum minima consequatur similique itaque eaque corporis.</p>
+        </div>
+
+        <div class="container m-5 shadow bg-light p-5 rounded-5">
+            <h3>Default Container</h3>
+            <h4>What</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt adipisci, vero architecto delectus, dolore animi ipsa sapiente consequuntur aliquam necessitatibus quaerat? Autem facilis laborum minima consequatur similique itaque eaque corporis.</p>
+        </div>        
+        
+        <div class="container">
+            <div class="row g-0">
+
+                <div class="col">
+                    <div class="custom-box"> Row 1 </div>
+                </div>
+                <div class="col">
+                    <div class="custom-box"> Row 2 </div>
+                </div>
+                <div class="col">
+                    <div class="custom-box"> Row 3 </div>
+                </div>
+                <div class="col">
+                    <div class="custom-box"> Row 4 </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- shorcut: div.col*4>div.custom-box -->
+        <div class="container-fluid">
+            <h3>Rows</h3>
+            <div class="row g-0">
+                <div class="col col-lg-2 col-md-4 col-sm-12">
+                    <div class="custom-box"> Row 1</div>
+                </div>
+                <div class="col col-lg-5 col-md-4 col-sm-12">
+                    <!-- 12 Columns yung default hehe -->
+                    <div class="custom-box"> Row 2 </div>
+                </div>
+                <div class="col col-lg-5 col-md-4 col-sm-12">
+                    <!-- 12 Columns yung default hehe -->
+                    <div class="custom-box"> Row 2 </div>
                 </div>
             </div>
-        </nav>
-        
+        </div>
+
+        <div class="container my-4 d-flex justify-content-center">
+            <a href="colors.html" class="btn btn-success">Go To Colors</a>
+        </div>
+
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
